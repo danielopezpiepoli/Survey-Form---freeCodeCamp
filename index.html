@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Poliglotizate | Survey Form</title>
+    <link 
+    rel="stylesheet"
+    href="styles.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Poliglotizate | Survey Form</h1>
+        <p id="description">Help us improve our community</p>
+      </header>
+      <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+  <!--Personal details: input-->
+        <div class="form-group">
+          <fieldset>
+            <legend>Tell us a bit about yourself</legend>
+            <label id="name-label" for="name">Name</label><input 
+            id="name" 
+            name="name" 
+            type="text"
+            placeholder="Enter your full name"  
+            required />
+            <label id="email-label" for="email">Email </label><input 
+            id="email" 
+            name="email" 
+            type="email"
+            placeholder="Enter your e-mail address" 
+            required />
+            <label id="number-label" for="number">Age (years)</label><input 
+            id="number" 
+            type="number" 
+            name="number" 
+            min="10" 
+            max="120" 
+            placeholder="Enter your age"
+            required/>
+            <label for="current-level">What do you consider is your current level in your target language?
+              <select id="dropdown" id="current-level" name="current-level" required>
+                <option value disabled selected>(select one)</option>
+                <option value="A0">A0: First contact at all</option>
+                <option value="A1">A1: I can say "Hello"</option>
+                <option value="A2">A2: I can answer to easy questions</option>
+                <option value="B1">B1: I can easily read articles</option>
+                <option value="B2">B2: I can survive abroad</option>
+                <option value="C1">C1: I don't need to think a lot</option>
+                <option value="C2">C2: I feel like a native speaker</option>
+              </select>
+            </label>
+            <label for="referrer">How did you hear about us?
+              <select id="dropdown" id="referrer" name="referrer" required>
+                <option value selected disabled>(select one)</option>
+                <option value="Instagram">Instagram</option>
+                <option value="TikTok">TikTok</option>
+                <option value="Youtube">YouTube</option>
+                <option value="Facebook">Facebook</option>
+                <option value="LinkedIn">LinkedIn</option>
+                <option value="website-ad">Ad on Website</option>
+                <option value="Other">Other</option>
+              </select>
+            </label>
+          </fieldset>
+        </div>
+  <!--Recommendation: Radio buttoms-->
+        <div class="form-group">
+          <fieldset>
+            <legend>Would you recommmend us to a friend?</legend>
+              <label for="absolutely">
+                <input 
+                id="absolutely"
+                value="Absolutely"
+                type="radio"
+                name="user-recommend"
+                class="input-radio"
+                checked /> Absolutely
+              </label>
+              <label for="who-knows">
+                <input 
+                id="who-knows"
+                value="who-knows"
+                type="radio"
+                name="user-recommend"
+                class="input-radio" /> Who knows?
+              </label>
+              <label for="we-will-see">
+                <input 
+                id="we-will-see"
+                value="we-will-see"
+                type="radio"
+                name="user-recommend"
+                class="input-radio"/> We will see...
+              </label>
+          </fieldset>
+        </div>
+  <!--Favorite feauture: select-->
+        <div class="form-group">
+          <fieldset>
+            <legend>What are your favorite features of Poliglotizate?
+            </legend>
+            <div class="feature-pref"> 
+<!--              <p class="video-post-pref">How do you prefer to learn?</p>
+               <label for="videos">
+                <input
+                 id="videos"
+                 value"videos"
+                 type="radio"
+              name="post-pref"
+                class="input-radio"
+                 checked
+              /> Videos
+              </label>
+              <label for="posts">
+                <input
+                id="posts"
+                value="posts"
+                type="radio"
+              name="post-pref"
+                class="input-radio"
+              /> Posts
+              </label>
+            </div> -->             
+            <div class="feature-pref">
+              <label for="feature">Your favorite activity
+                <select id="dropdown" id="feature" name="feature" required>
+                <option value selected disabled>(select one)</option>
+                <option value="Pronunciation-tests">Pronunciation tests (videos)</option>
+                <option value="Dialogues">Dialogues</option>
+                <option value="Grammar">Grammar</option>
+                <option value="5-ways">5 ways to say...</option>
+                <option value="learning-song">Learning with a song</option>
+                </select>
+              </label>
+            </div>
+          </fieldset>
+        </div>
+  <!--What to improve: checkbox-->
+        <div class="form-group">
+          <fieldset>
+            <legend>What would you like to see  improved?<span class="clue"> (Check all that apply)</span></legend>
+            <label
+            ><input
+              name="prefer"
+              value="short-videos"
+              type="checkbox"
+              class="input-checkbox"
+            />Short Videos
+            </label>
+            <label
+            ><input
+              name="prefer"
+              value="long-videos"
+              type="checkbox"
+              class="input-checkbox"
+            />Long Videos
+            </label>
+            <label
+            ><input
+              name="prefer"
+              value="posts"
+              type="checkbox"
+              class="input-checkbox"
+            />Posts
+            </label>
+            <div>
+              <p class="comments">Any comments or suggestions?
+              </p>
+              <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter your comment here..."
+              ></textarea>
+            </div>
+          </fieldset>
+        </div>
+  <!--Comments/suggestions: input-->
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div><!--container-->
+  </body>
+</html>
